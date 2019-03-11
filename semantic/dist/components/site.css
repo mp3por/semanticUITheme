@@ -13,7 +13,6 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 html,
 body {
   height: 100%;
@@ -27,10 +26,10 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
   font-smoothing: antialiased;
 }
 
@@ -44,7 +43,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.28571429em;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
   font-weight: bold;
@@ -125,23 +124,23 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 ::selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 
 /* Force Simple Scrollbars */
@@ -187,6 +186,23 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
         Global Overrides
 *******************************/
 
+.background-image {
+  background-image: url('./../themes/griffinhearts2/assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ui.container {
+  padding-top: 22px;
+}
+[class*="regular font"] {
+  font-family: 'Roboto Regular', 'Roboto Light', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+}
+[class*="bold font"] {
+  font-family: 'Roboto Bold', 'Roboto Light', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+}
+.ui[class*="yellow text"] {
+  color: #F4B300;
+}
 
 
 /*******************************

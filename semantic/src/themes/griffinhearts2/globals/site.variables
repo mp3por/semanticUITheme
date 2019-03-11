@@ -6,14 +6,19 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
+@mainFont          : 'Roboto Light';
+@mainFontLight     : 'Roboto Light';
+@mainFontBold      : 'Roboto Bold';
+@mainFontRegular   : 'Roboto Regular';
+
+@fontName          : @mainFont;
 @fontSmoothing     : antialiased;
 
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 @googleFontName    : @fontName;
-@importGoogleFonts : true;
+@importGoogleFonts : false;
 @googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
 
@@ -125,7 +130,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@textColor           : rgba(255, 255, 255, 1);
 
 /*-------------------
       Paragraph
@@ -222,11 +227,11 @@
 /*---  Colors  ---*/
 @red              : #DB2828;
 @orange           : #F2711C;
-@yellow           : #FBBD08;
+@yellow           : #F4B300;
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : #021D35;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
@@ -285,7 +290,7 @@
 /*--- Colored Text ---*/
 @redTextColor    : @red;
 @orangeTextColor : @orange;
-@yellowTextColor : #B58105; // Yellow text is difficult to read
+@yellowTextColor : @yellow; // Yellow text is difficult to read
 @oliveTextColor  : #8ABC1E; // Olive is difficult to read
 @greenTextColor  : #1EBC30; // Green is difficult to read
 @tealTextColor   : #10A3A3; // Teal text is difficult to read

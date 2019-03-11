@@ -10,3 +10,15 @@
 .ui.container {
   padding-top: 22px;
 }
+
+[class*="regular font"]{
+  font-family: @mainFontRegular, @pageFont !important;
+}
+
+[class*="bold font"] {
+  font-family: @mainFontBold, @pageFont !important;
+}
+
+.ui[class*="yellow text"] {
+  color :  @yellow;
+}
