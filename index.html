@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Semantic UI Try</title>
 
-    <link href="http://allfont.net/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css" />
-    <link href="http://allfont.net/allfont.css?fonts=roboto-regular" rel="stylesheet" type="text/css" />
-    <link href="http://allfont.net/allfont.css?fonts=roboto-bold" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.net/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css"/>
+    <link href="http://allfont.net/allfont.css?fonts=roboto-regular" rel="stylesheet" type="text/css"/>
+    <link href="http://allfont.net/allfont.css?fonts=roboto-bold" rel="stylesheet" type="text/css"/>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
@@ -16,33 +16,57 @@
     <script src="semantic/dist/semantic.js"></script>
 
     <script>
-        $(document).ready(function(){
-            $('.ui.dropdown') .dropdown();
+        $(document).ready(function () {
+            $('.ui.dropdown').dropdown();
         });
     </script>
 </head>
 <body class="ui text container background-image">
-    <div class="ui middle aligned grid">
-        <div class="four wide column"></div>
-        <div class="eight wide center aligned column"> The Platform <span class="ui yellow text">•</span> Partners <span class="ui yellow text">•</span> Blog <span class="ui yellow text">•</span> Contact </div>
-        <div class="four wide right aligned column">
-            <div class="ui dropdown">
+<div class="ui middle aligned grid">
+    <div class="four wide column"></div>
+    <div class="eight wide center aligned column"> The Platform <span class="ui yellow text">•</span> Partners <span
+            class="ui yellow text">•</span> Blog <span class="ui yellow text">•</span> Contact
+    </div>
+    <div class="four wide right aligned column">
+        <div class="ui dropdown-container">
+            <div class="ui dropdown griffin">
                 <input type="hidden" name="currency">
                 <div class="text">EUR</div>
                 <div class="menu">
-                    <div class="item" data-value="EUR">
-                        <div class="ui red empty circular label"></div>
-                        EUR
+
+                    <div class="item">
+                        <label class="radio-button-container">EUR
+                            <input type="checkbox" checked="checked" name="currency">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!--<input type="radio" name="example2" checked="checked">-->
+                        <!--<label>EUR</label>-->
                     </div>
-                    <div class="item" data-value="USD">
-                        <div class="ui red empty circular label"></div>
-                        USD
+
+                    <div class="item">
+                        <label class="radio-button-container">USD
+                            <input type="checkbox" name="currency">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!--<input type="radio" name="example2">-->
+                        <!--<label>USD</label>-->
                     </div>
+                    <!--<div class="item selected" data-value="EUR">-->
+                        <!--<div class="ui red circular label"></div>-->
+                        <!--EUR-->
+                    <!--</div>-->
+                    <!--<div class="item" data-value="USD">-->
+                        <!--<div class="ui red empty circular label"></div>-->
+                        <!--USD-->
+                    <!--</div>-->
                 </div>
             </div>
-
-            <button class="ui regular font griffin button">Sign in</button>
         </div>
+
+        <button class="ui regular font griffin button">Sign in</button>
     </div>
+</div>
 </body>
 </html>

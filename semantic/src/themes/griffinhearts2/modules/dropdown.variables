@@ -10,9 +10,13 @@
   box-shadow @defaultDuration @defaultEasing,
   width @defaultDuration @defaultEasing
 ;
-@borderRadius: @defaultBorderRadius;
+@borderRadius: 9.35px;
+@borderColor: @white;
+@borderWidth: 1px;
+@backgroundColor: #265871;
 
 @raisedShadow: 0px 2px 3px 0px @borderColor;
+
 
 /*-------------------
        Content
@@ -26,13 +30,13 @@
 @textTransition: none;
 
 /* Menu */
-@menuBackground: #FFFFFF;
+@menuBackground: #0F415C;
 @menuMargin: 0em;
-@menuPadding: 0em 0em;
+@menuPadding: 0.5em 0em 0em 0em;
 @menuTop: 100%;
 @menuTextAlign: left;
 
-@menuBorderWidth: 1px;
+@menuBorderWidth: @borderWidth;
 @menuBorderColor: @borderColor;
 @menuBorder: @menuBorderWidth solid @menuBorderColor;
 @menuBoxShadow: @raisedShadow;
