@@ -4,15 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Semantic UI Try</title>
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
+    <script src="semantic/dist/semantic.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.ui.dropdown') .dropdown();
+        });
+    </script>
 </head>
-<body class="ui container" style="background: #0d71bb">
-    <div class="ui three column doubling grid">
-        <div class="ui column"></div>
-        <div class="ui center aligned column"> The Platform</div>
-        <div class="ui right aligned column"> Sign In</div>
+<body class="ui text container background-image">
+    <div class="ui grid">
+        <div class="four wide column"></div>
+        <div class="eight wide center aligned column"> The Platform • Partners • Blog • Contact </div>
+        <div class="four wide right aligned column">
+            <div class="ui dropdown">
+                <input type="hidden" name="currency">
+                <div class="text">EUR</div>
+                <div class="menu">
+                    <div class="item" data-value="EUR">
+                        <div class="ui red empty circular label"></div>
+                        EUR
+                    </div>
+                    <div class="item" data-value="USD">
+                        <div class="ui red empty circular label"></div>
+                        USD
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

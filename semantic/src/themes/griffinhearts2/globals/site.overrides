@@ -1,0 +1,12 @@
+/*******************************
+        Global Overrides
+*******************************/
+.background-image {
+  background-image: url('@{imagePath}/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ui.container {
+  padding-top: 22px;
+}

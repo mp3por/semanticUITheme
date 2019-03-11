@@ -1,0 +1,13 @@
+@pageFont      : "Roboto", sans-serif;
+
+// page settings
+@pageBackground      : url('assets/images/background.png');
+@lineHeight          : 1.33;
+@textColor           : #212121;
+
+// base sizes
+@emSize            : 14px;
+@fontSize          : 13px;
+
+// paths
+@imagePath : '/themes/griffinhearts/assets/images';
