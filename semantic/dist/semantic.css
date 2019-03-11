@@ -783,6 +783,16 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   flex: 1;
 }
 
+.logo.text {
+  font-size: 60px !important;
+  line-height: 60px !important;
+  text-align: center;
+}
+
+.sub-logo.text {
+  color: #F4B300;
+}
+
 /*******************************
          Site Overrides
 *******************************/
