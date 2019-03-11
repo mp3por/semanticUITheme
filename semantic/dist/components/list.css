@@ -406,13 +406,13 @@ ol.ui.list ol li,
 .ui.link.list .item,
 .ui.link.list a.item,
 .ui.link.list .item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
   -webkit-transition: 0.1s color ease;
   transition: 0.1s color ease;
 }
 .ui.link.list.list a.item:hover,
 .ui.link.list.list .item a:not(.ui):hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
 }
 .ui.link.list.list a.item:active,
 .ui.link.list.list .item a:not(.ui):active {
@@ -420,7 +420,7 @@ ol.ui.list ol li,
 }
 .ui.link.list.list .active.item,
 .ui.link.list.list .active.item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.95);
+  color: #276F86;
 }
 
 /* Inverted */

@@ -766,6 +766,23 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   color: #F4B300;
 }
 
+.pusher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -16586,14 +16603,14 @@ ol.ui.list ol li,
 .ui.link.list .item,
 .ui.link.list a.item,
 .ui.link.list .item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
   -webkit-transition: 0.1s color ease;
   transition: 0.1s color ease;
 }
 
 .ui.link.list.list a.item:hover,
 .ui.link.list.list .item a:not(.ui):hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
 }
 
 .ui.link.list.list a.item:active,
@@ -16603,7 +16620,7 @@ ol.ui.list ol li,
 
 .ui.link.list.list .active.item,
 .ui.link.list.list .active.item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.95);
+  color: #276F86;
 }
 
 /* Inverted */
@@ -19316,6 +19333,17 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.segment.footer {
+  padding: 0px 20px;
+  max-width: 1200px;
+  height: 105px;
+  background-color: #1F2A3E;
+  margin: auto;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  color: #FFFFFF;
+}
 
 /*******************************
          Site Overrides

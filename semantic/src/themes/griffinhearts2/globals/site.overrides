@@ -22,3 +22,13 @@
 .ui[class*="yellow text"] {
   color :  @yellow;
 }
+
+.pusher {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+}

@@ -100,10 +100,10 @@
 @invertedItemLinkHoverColor: @linkHoverColor;
 
 /* Link List */
-@linkListItemColor: @unselectedTextColor;
-@linkListItemHoverColor: @hoveredTextColor;
+@linkListItemColor: @white;
+@linkListItemHoverColor: @white;
 @linkListItemDownColor: @pressedTextColor;
-@linkListItemActiveColor: @selectedTextColor;
+@linkListItemActiveColor: @infoTextColor;
 @linkListTransition:
   @defaultDuration color @defaultEasing
 ;
