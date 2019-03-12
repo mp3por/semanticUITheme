@@ -15,9 +15,15 @@
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
     <script src="semantic/dist/semantic.js"></script>
 
+    <script type="text/javascript" src="node_modules/semantic-ui-calendar/dist/calendar.min.js"></script>
+    <link rel="stylesheet" href="node_modules/semantic-ui-calendar/dist/calendar.min.css" />
+
     <script>
         $(document).ready(function () {
             $('.ui.dropdown').dropdown();
+            $('#example2').calendar({
+                type: 'date'
+            });
         });
     </script>
 </head>
@@ -144,9 +150,15 @@
                         </div>
                         <!-- DATES -->
                         <div class="no-gutters column">
-                            <div class="ui griffin large label">
-                                <i class="calendar icon"></i> Dates
+                            <div class="ui calendar take-space" id="example2">
+                                <div class="ui black griffin light-blue take-space input left icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" placeholder="Date">
+                                </div>
                             </div>
+                            <!--<div class="ui griffin large label">-->
+                                <!--<i class="calendar icon"></i> Dates-->
+                            <!--</div>-->
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
                         <!-- PASSENGERS -->
