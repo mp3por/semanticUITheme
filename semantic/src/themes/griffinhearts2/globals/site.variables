@@ -275,6 +275,7 @@
 @brownBackground  : #F1E2D3;
 @videoContainerBackground: #1F2A3E;
 @footerBackground : rgba(31, 42, 62, 0.5);
+@griffinLightblue        : #265871;
 
 /*--- Colored Headers ---*/
 @redHeaderColor    : darken(@redTextColor, 5);

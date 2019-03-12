@@ -61,29 +61,48 @@
   position: relative;
   z-index: 11;
   display: inline-block;
+
+  &.light-blue {
+    .ui.dropdown.griffin {
+      background-color: @griffinLightblue !important;
+    }
+  }
 }
 
 .ui.dropdown.griffin {
-  border: @borderWidth solid @borderColor;
-  border-radius: @borderRadius;
 
-  text-align: center;
-  background: @backgroundColor !important;
+  &.currency {
+    background: @backgroundColor !important;
+    border: 1px solid @white;
+    border-radius: 9.34px;
 
-  &.accommodation {
-    border-radius: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    .text {
-      padding-left: 10px;
+    .menu {
+      left: -1px;
     }
   }
 
-  &.place {
+  border:1px solid @white;
+  border-left: 0px;
+  border-right: 0px;
+
+  &.transfer {
+    border-right: @borderWidth solid @borderColor !important;
+    border-bottom: @borderWidth solid @borderColor !important;
+    border-top: @borderWidth solid @borderColor !important;
+    border-top-right-radius: @borderRadius !important;
+    border-bottom-right-radius: @borderRadius !important;
+
+    .menu {
+      width: 101%;
+    }
+  }
+
+  text-align: center;
+  background: transparent !important;
+
+  &.place,
+  &.accommodation,
+  &.transfer {
     display: flex;
     align-items: center;
     border-radius: 0px;
@@ -96,7 +115,14 @@
       padding-left: 10px;
     }
 
+    .menu {
+      border-top: 0px;
+    }
+  }
 
+
+
+  &.place {
     .menu .item .radio-button-container {
       display: flex;
       align-content: center;
@@ -132,12 +158,17 @@
   }
 
   .menu {
+    .padding {
+      height: 20px;
+      background-color: transparent;
+    }
+
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     top: 75%;
     z-index: -1;
     box-shadow: none !important;
-    left: -1px;
+    left: 0px;
     width: 100%;
 
     .item {

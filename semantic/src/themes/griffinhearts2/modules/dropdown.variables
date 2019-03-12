@@ -13,7 +13,7 @@
 @borderRadius: 9.35px;
 @borderColor: @white;
 @borderWidth: 1px;
-@backgroundColor: #265871;
+@backgroundColor: @griffinLightblue;
 
 @raisedShadow: 0px 2px 3px 0px @borderColor;
 

@@ -33,7 +33,7 @@
                 </div>
                 <div class="four wide right aligned column">
                     <div class="ui dropdown-container">
-                        <div class="ui dropdown small griffin">
+                        <div class="ui dropdown small currency griffin">
                             <div class="text">EUR</div>
                             <div class="menu">
                                 <div class="item">
@@ -90,7 +90,7 @@
                     <div class="row">
                         <!-- BUDGET -->
                         <div class="no-gutters column">
-                            <div class="ui mini left icon griffin first input">
+                            <div class="ui mini left icon griffin first light-blue input">
                                 <input type="text" placeholder="Budget:" name="budget">
                                 <i class="dollar sign icon white"></i>
                             </div>
@@ -98,7 +98,7 @@
                         </div>
                         <!-- FROM CITY -->
                         <div class="no-gutters column">
-                            <div class="ui dropdown-container take-space">
+                            <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui griffin place dropdown">
                                     <div class="text">From city:</div>
                                     <div class="menu">
@@ -120,7 +120,7 @@
                         </div>
                         <!-- TO CITY -->
                         <div class="no-gutters column">
-                            <div class="ui dropdown-container take-space">
+                            <div class="ui dropdown-containe light-blue take-space">
                                 <div class="ui griffin place dropdown">
                                     <div class="text">To city:</div>
                                     <div class="menu">
@@ -141,10 +141,13 @@
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
                         <!-- DATES -->
-                        <div class="no-gutters column">Dates</div>
+                        <div class="no-gutters column">
+                            <div class="take-space light-blue">Dates</div>
+                            <div class="vertical-divider">&nbsp;</div>
+                        </div>
                         <!-- PASSENGERS -->
                         <div class="no-gutters column">
-                            <div class="ui mini left icon griffin input">
+                            <div class="ui mini left icon griffin light-blue input">
                                 <input type="text" placeholder="Passengers:" name="passengers">
                                 <i class="male icon white"></i>
                             </div>
@@ -152,29 +155,51 @@
                         </div>
                         <!-- ACCOMODATION -->
                         <div class="no-gutters column">
-                            <div class="ui dropdown-container take-space">
+                            <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui dropdown small  take-space accommodation griffin">
                                     <div class="text"> Accommodation:</div>
                                     <div class="menu">
+                                        <div class="padding">&nbsp;</div>
                                         <div class="item">
                                             <label class="radio-button-container">All
-                                                <input type="checkbox" checked="checked" name="accommodation">
+                                                <input type="checkbox" checked="checked" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="item">
                                             <label class="radio-button-container">Hotel
-                                                <input type="checkbox" name="accommodation">
+                                                <input type="checkbox" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="vertical-divider">&nbsp;</div>
                         </div>
                         <!-- Transfer -->
-                        <div class="no-gutters column">Transfer</div>
+                        <div class="no-gutters column">
+                            <div class="ui dropdown-container light-blue take-space">
+                                <div class="ui dropdown small  take-space transfer griffin">
+                                    <div class="text"> Transfer:</div>
+                                    <div class="menu">
+                                        <div class="padding">&nbsp;</div>
+                                        <div class="item">
+                                            <label class="radio-button-container">Public
+                                                <input type="checkbox" checked="checked" name="transfer_type">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label class="radio-button-container">Rent a car
+                                                <input type="checkbox" name="transfer_type">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- GO -->
                         <div class="no-gutters column">GO</div>
                     </div>

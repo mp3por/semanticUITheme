@@ -251,13 +251,12 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 }
 .vertical-divider {
   z-index: 100;
-  border: solid #FFFFFF;
-  border-left: 1px;
+  background: #FFFFFF;
   height: 60%;
-  width: 0;
+  width: 2px;
   position: absolute;
   top: 6px;
-  right: 0;
+  right: -1px;
 }
 
 

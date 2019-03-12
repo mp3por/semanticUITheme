@@ -515,13 +515,17 @@
   display: block;
 }
 .ui.input.griffin.first input {
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border-right: 0px;
   border-radius: 10px 0px 0px 10px;
 }
+.ui.input.griffin.light-blue input {
+  background: #265871 !important;
+}
 .ui.input.griffin input {
-  background: #265871;
   color: #FFFFFF;
+  background: transparent;
+  border: none;
   border: 1px solid #FFFFFF;
   border-radius: 0px;
   border-right: 0px;

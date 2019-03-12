@@ -6,15 +6,23 @@
 
   &.first {
     input {
-      border: 1px solid white;
+      border: 1px solid @white;
       border-right: 0px;
       border-radius: 10px 0px 0px 10px;
     }
   }
 
+  &.light-blue {
+    input {
+      background: @griffinLightblue !important;
+    }
+  }
+
   input {
-    background: #265871; // dropdown background color
+    //background: #265871; // dropdown background color
     color: @white;
+    background: transparent;
+    border: none;
     border: 1px solid @white;
 
     border-radius: 0px;

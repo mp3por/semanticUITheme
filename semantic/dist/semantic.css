@@ -822,13 +822,12 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .vertical-divider {
   z-index: 100;
-  border: solid #FFFFFF;
-  border-left: 1px;
+  background: #FFFFFF;
   height: 60%;
-  width: 0;
+  width: 2px;
   position: absolute;
   top: 6px;
-  right: 0;
+  right: -1px;
 }
 
 /*******************************
@@ -14775,14 +14774,19 @@ img.ui.bordered.image {
 }
 
 .ui.input.griffin.first input {
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border-right: 0px;
   border-radius: 10px 0px 0px 10px;
 }
 
+.ui.input.griffin.light-blue input {
+  background: #265871 !important;
+}
+
 .ui.input.griffin input {
-  background: #265871;
   color: #FFFFFF;
+  background: transparent;
+  border: none;
   border: 1px solid #FFFFFF;
   border-radius: 0px;
   border-right: 0px;
@@ -23724,6 +23728,24 @@ ol.ui.horizontal.list li:before,
 .column.no-gutters {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.column.bordered {
+  border: 1px solid #FFFFFF;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.column.bordered.first {
+  border-left: 1px solid #FFFFFF;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.column.bordered.last {
+  border-right: 1px solid #FFFFFF;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*******************************
@@ -33901,45 +33923,65 @@ select.ui.dropdown {
   display: inline-block;
 }
 
+.ui.dropdown-container.light-blue .ui.dropdown.griffin {
+  background-color: #265871 !important;
+}
+
 .ui.dropdown.griffin {
   border: 1px solid #FFFFFF;
-  border-radius: 9.35px;
+  border-left: 0px;
+  border-right: 0px;
   text-align: center;
+  background: transparent !important;
+}
+
+.ui.dropdown.griffin.currency {
   background: #265871 !important;
+  border: 1px solid #FFFFFF;
+  border-radius: 9.34px;
 }
 
-.ui.dropdown.griffin.accommodation {
-  border-radius: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  height: 100%;
+.ui.dropdown.griffin.currency .menu {
+  left: -1px;
+}
+
+.ui.dropdown.griffin.transfer {
+  border-right: 1px solid #FFFFFF !important;
+  border-bottom: 1px solid #FFFFFF !important;
+  border-top: 1px solid #FFFFFF !important;
+  border-top-right-radius: 9.35px !important;
+  border-bottom-right-radius: 9.35px !important;
+}
+
+.ui.dropdown.griffin.transfer .menu {
+  width: 101%;
+}
+
+.ui.dropdown.griffin.place,
+.ui.dropdown.griffin.accommodation,
+.ui.dropdown.griffin.transfer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.ui.dropdown.griffin.accommodation .text {
-  padding-left: 10px;
-}
-
-.ui.dropdown.griffin.place {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   height: 100%;
   border-left: 0px;
   border-right: 0px;
   border-radius: 0px;
 }
 
-.ui.dropdown.griffin.place .text {
+.ui.dropdown.griffin.place .text,
+.ui.dropdown.griffin.accommodation .text,
+.ui.dropdown.griffin.transfer .text {
   padding-left: 10px;
+}
+
+.ui.dropdown.griffin.place .menu,
+.ui.dropdown.griffin.accommodation .menu,
+.ui.dropdown.griffin.transfer .menu {
+  border-top: 0px;
 }
 
 .ui.dropdown.griffin.place .menu .item .radio-button-container {
@@ -33982,8 +34024,13 @@ select.ui.dropdown {
   z-index: -1;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  left: -1px;
+  left: 0px;
   width: 100%;
+}
+
+.ui.dropdown.griffin .menu .padding {
+  height: 20px;
+  background-color: transparent;
 }
 
 .ui.dropdown.griffin .menu .item {
