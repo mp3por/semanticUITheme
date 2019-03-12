@@ -804,6 +804,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   margin: auto;
 }
 
+.griffin.form-container {
+  max-width: 1800px;
+  min-height: 250px;
+  background-color: rgba(31, 42, 62, 0.5);
+  border-radius: 26px;
+}
+
+.booking-type-container .radio-button-container:not(last) {
+  margin-right: 10px;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -19359,7 +19370,7 @@ ol.ui.horizontal.list li:before,
   padding: 0px 20px;
   max-width: 1200px;
   height: 105px;
-  background-color: #1F2A3E;
+  background-color: rgba(31, 42, 62, 0.5);
   margin: auto;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -33869,6 +33880,7 @@ select.ui.dropdown {
 .ui.dropdown.griffin .text .radio-button-container {
   padding-left: 0;
   font-size: 1.14285714rem;
+  line-height: initial;
 }
 
 .ui.dropdown.griffin .menu {
@@ -33892,11 +33904,18 @@ select.ui.dropdown {
 /* Customize the label (the container) */
 
 .radio-button-container {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  height: 19px;
   position: relative;
   padding-left: 20px;
   cursor: pointer;
   font-size: 14px;
+  line-height: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

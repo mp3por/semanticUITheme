@@ -42,7 +42,7 @@
 }
 
 .video-container {
-  background-color: @footerBackground;
+  background-color: @videoContainerBackground;
   border: 1px solid @white;
   text-align: center;
   font-size: 30px;
@@ -50,4 +50,19 @@
   width: 400px;
   height: 220px;
   margin: auto;
+}
+
+.griffin.form-container {
+  max-width: 1800px;
+  min-height: 250px;
+  background-color: @footerBackground;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  border-radius: 26px;
+}
+
+.booking-type-container {
+  .radio-button-container:not(last) {
+    margin-right: 10px;
+  }
 }

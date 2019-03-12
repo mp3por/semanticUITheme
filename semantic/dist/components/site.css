@@ -236,6 +236,15 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   height: 220px;
   margin: auto;
 }
+.griffin.form-container {
+  max-width: 1800px;
+  min-height: 250px;
+  background-color: rgba(31, 42, 62, 0.5);
+  border-radius: 26px;
+}
+.booking-type-container .radio-button-container:not(last) {
+  margin-right: 10px;
+}
 
 
 /*******************************

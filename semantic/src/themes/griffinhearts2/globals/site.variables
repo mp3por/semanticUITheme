@@ -273,7 +273,8 @@
 @purpleBackground : #F6E7FF;
 @pinkBackground   : #FFE3FB;
 @brownBackground  : #F1E2D3;
-@footerBackground : #1F2A3E;
+@videoContainerBackground: #1F2A3E;
+@footerBackground : rgba(31, 42, 62, 0.5);
 
 /*--- Colored Headers ---*/
 @redHeaderColor    : darken(@redTextColor, 5);

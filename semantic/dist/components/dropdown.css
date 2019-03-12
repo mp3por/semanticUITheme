@@ -1530,6 +1530,7 @@ select.ui.dropdown {
 .ui.dropdown.griffin .text .radio-button-container {
   padding-left: 0;
   font-size: 1.14285714rem;
+  line-height: initial;
 }
 .ui.dropdown.griffin .menu {
   border-top-left-radius: 0;
@@ -1548,11 +1549,18 @@ select.ui.dropdown {
 }
 /* Customize the label (the container) */
 .radio-button-container {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 19px;
   position: relative;
   padding-left: 20px;
   cursor: pointer;
   font-size: 14px;
+  line-height: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

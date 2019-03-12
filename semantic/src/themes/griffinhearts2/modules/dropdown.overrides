@@ -80,6 +80,7 @@
     .radio-button-container {
       padding-left: 0;
       font-size: @large;
+      line-height: initial;
     }
   }
 
@@ -104,11 +105,14 @@
 
 /* Customize the label (the container) */
 .radio-button-container {
-  display: block;
+  display: inline-flex;
+  align-items: baseline;
+  height: 19px;
   position: relative;
   padding-left: 20px;
   cursor: pointer;
   font-size: 14px;
+  line-height: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
