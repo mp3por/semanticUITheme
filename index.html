@@ -87,10 +87,10 @@
                         </div>
                     </div>
                     <!--FORM ROW -->
-                    <div class="row">
+                    <div class="ui row parameters form">
                         <!-- BUDGET -->
                         <div class="no-gutters column">
-                            <div class="ui mini left icon griffin first light-blue input">
+                            <div class="ui left icon griffin first light-blue input">
                                 <input type="text" placeholder="Budget:" name="budget">
                                 <i class="dollar sign icon white"></i>
                             </div>
@@ -100,8 +100,9 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui griffin place dropdown">
-                                    <div class="text">From city:</div>
+                                    <div class="text"><i class="map marker icon"></i><div class="placeholder">From city:</div></div>
                                     <div class="menu">
+                                        <div class="padding">&nbsp;</div>
                                         <div class="item">
                                             <label class="radio-button-container">
                                                 <input type="checkbox" checked="checked" name="from_city">
@@ -110,7 +111,7 @@
                                                     <div class="city">Sofia</div>
                                                     <div class="country">Bulgaria</div>
                                                 </div>
-                                                <div class="ticker">SOF</div>
+                                                <div class="ticker"><i class="map marker  icon"></i>SOF</div>
                                             </label>
                                         </div>
                                     </div>
@@ -120,19 +121,20 @@
                         </div>
                         <!-- TO CITY -->
                         <div class="no-gutters column">
-                            <div class="ui dropdown-containe light-blue take-space">
+                            <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui griffin place dropdown">
-                                    <div class="text">To city:</div>
+                                    <div class="text"><i class="map marker icon"></i><div class="placeholder">To city:</div></div>
                                     <div class="menu">
+                                        <div class="padding">&nbsp;</div>
                                         <div class="item">
                                             <label class="radio-button-container">
-                                                <input type="checkbox" checked="checked" name="from_city">
+                                                <input type="checkbox" checked="checked" name="to_city">
                                                 <i class="counterclockwise rotated plane icon"></i>
                                                 <div class="info-container">
                                                     <div class="city">Sofia</div>
                                                     <div class="country">Bulgaria</div>
                                                 </div>
-                                                <div class="ticker">SOF</div>
+                                                <div class="ticker"><i class="map marker  icon"></i>SOF</div>
                                             </label>
                                         </div>
                                     </div>
@@ -142,32 +144,38 @@
                         </div>
                         <!-- DATES -->
                         <div class="no-gutters column">
-                            <div class="take-space light-blue">Dates</div>
+                            <div class="ui griffin large label">
+                                <i class="calendar icon"></i> Dates
+                            </div>
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
                         <!-- PASSENGERS -->
                         <div class="no-gutters column">
-                            <div class="ui mini left icon griffin light-blue input">
+                            <div class="ui left icon griffin light-blue input">
                                 <input type="text" placeholder="Passengers:" name="passengers">
                                 <i class="male icon white"></i>
                             </div>
+                            <!--<div class="ui left icon griffin light-blue input">-->
+                                <!--<input type="text" placeholder="Passengers:" name="passengers">-->
+                                <!--<i class="male icon white"></i>-->
+                            <!--</div>-->
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
                         <!-- ACCOMODATION -->
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui dropdown small  take-space accommodation griffin">
-                                    <div class="text"> Accommodation:</div>
+                                    <div class="text"> <i class="building icon"></i> <div class="placeholder">Accommodation:</div></div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
-                                            <label class="radio-button-container">All
+                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>All</div>
                                                 <input type="checkbox" checked="checked" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="item">
-                                            <label class="radio-button-container">Hotel
+                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>Hotel</div>
                                                 <input type="checkbox" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
@@ -181,17 +189,17 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui dropdown small  take-space transfer griffin">
-                                    <div class="text"> Transfer:</div>
+                                    <div class="text"><i class="bus icon"></i> <div class="placeholder"> Transfer: </div></div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
-                                            <label class="radio-button-container">Public
+                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>Public</div>
                                                 <input type="checkbox" checked="checked" name="transfer_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="item">
-                                            <label class="radio-button-container">Rent a car
+                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>Rent a car</div>
                                                 <input type="checkbox" name="transfer_type">
                                                 <span class="checkmark"></span>
                                             </label>
@@ -201,7 +209,9 @@
                             </div>
                         </div>
                         <!-- GO -->
-                        <div class="no-gutters column">GO</div>
+                        <div class="no-gutters center aligned column">
+                            <button class="ui regular font griffin large button">Go</button>
+                        </div>
                     </div>
                 </div>
             </div>

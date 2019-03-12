@@ -532,6 +532,10 @@ for instance `lemon icon` not `lemon outline icon` since there is only one lemon
 
 *******************************/
 
+i.icon {
+  opacity: 1 !important;
+  margin-right: 0px !important;
+}
 
 
 /*******************************

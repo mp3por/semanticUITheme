@@ -71,6 +71,10 @@
 
 .ui.dropdown.griffin {
 
+  .icon {
+    width: 2.67142857em;
+  }
+
   &.currency {
     background: @backgroundColor !important;
     border: 1px solid @white;
@@ -81,7 +85,7 @@
     }
   }
 
-  border:1px solid @white;
+  border: 1px solid @white;
   border-left: 0px;
   border-right: 0px;
 
@@ -111,15 +115,10 @@
     border-right: 0px;
     border-radius: 0px;
 
-    .text {
-      padding-left: 10px;
-    }
-
     .menu {
       border-top: 0px;
     }
   }
-
 
 
   &.place {
@@ -142,8 +141,21 @@
   }
 
   .text {
-    input {
+    display: flex;
+    align-items: baseline;
+
+    .placeholder {
+      font-size: @tiny;
+    }
+
+    input, .radio-button-container .icon, .radio-button-container .info-container {
       display: none;
+    }
+
+    .ticker {
+      .icon {
+        display: inline-block;
+      }
     }
 
     .checkmark {
@@ -152,14 +164,27 @@
 
     .radio-button-container {
       padding-left: 0;
-      font-size: @large;
-      line-height: initial;
+      //font-size: @large;
+      //line-height: @large;
     }
   }
 
+  .ticker {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
   .menu {
+
+    .ticker {
+      .icon {
+        display: none;
+      }
+    }
+
     .padding {
-      height: 20px;
+      height: 5px;
       background-color: transparent;
     }
 

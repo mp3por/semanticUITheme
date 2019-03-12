@@ -80,7 +80,7 @@
   height: 60%;
   width: 2px;
   position: absolute;
-  top: 6px;
+  top: 20%;
   right: -1px;
 }
 

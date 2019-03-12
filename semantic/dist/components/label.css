@@ -1305,6 +1305,25 @@ a.ui.basic.label:hover {
          Theme Overrides
 *******************************/
 
+.ui.label.griffin {
+  width: 100%;
+  height: 100%;
+  background-color: #265871;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 0px;
+  padding: 0px;
+}
+.ui.label.griffin .icon {
+  width: 2.67142857em;
+}
 
 
 /*******************************

@@ -1524,6 +1524,9 @@ select.ui.dropdown {
   text-align: center;
   background: transparent !important;
 }
+.ui.dropdown.griffin .icon {
+  width: 2.67142857em;
+}
 .ui.dropdown.griffin.currency {
   background: #265871 !important;
   border: 1px solid #FFFFFF;
@@ -1556,11 +1559,6 @@ select.ui.dropdown {
   border-right: 0px;
   border-radius: 0px;
 }
-.ui.dropdown.griffin.place .text,
-.ui.dropdown.griffin.accommodation .text,
-.ui.dropdown.griffin.transfer .text {
-  padding-left: 10px;
-}
 .ui.dropdown.griffin.place .menu,
 .ui.dropdown.griffin.accommodation .menu,
 .ui.dropdown.griffin.transfer .menu {
@@ -1582,16 +1580,39 @@ select.ui.dropdown {
 .ui.dropdown.griffin.small {
   width: 60px;
 }
-.ui.dropdown.griffin .text input {
+.ui.dropdown.griffin .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.ui.dropdown.griffin .text .placeholder {
+  font-size: 0.85714286rem;
+}
+.ui.dropdown.griffin .text input,
+.ui.dropdown.griffin .text .radio-button-container .icon,
+.ui.dropdown.griffin .text .radio-button-container .info-container {
   display: none;
+}
+.ui.dropdown.griffin .text .ticker .icon {
+  display: inline-block;
 }
 .ui.dropdown.griffin .text .checkmark {
   display: none;
 }
 .ui.dropdown.griffin .text .radio-button-container {
   padding-left: 0;
-  font-size: 1.14285714rem;
-  line-height: initial;
+}
+.ui.dropdown.griffin .ticker {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .ui.dropdown.griffin .menu {
   border-top-left-radius: 0;
@@ -1603,8 +1624,11 @@ select.ui.dropdown {
   left: 0px;
   width: 100%;
 }
+.ui.dropdown.griffin .menu .ticker .icon {
+  display: none;
+}
 .ui.dropdown.griffin .menu .padding {
-  height: 20px;
+  height: 5px;
   background-color: transparent;
 }
 .ui.dropdown.griffin .menu .item {

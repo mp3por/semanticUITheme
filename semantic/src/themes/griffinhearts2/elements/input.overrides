@@ -3,12 +3,24 @@
 *******************************/
 .ui.input.griffin {
   display: block;
+  width: 100%;
+  height: 100%;
+
+  & > input::-webkit-input-placeholder {
+    font-size: @tiny;
+  }
+  & > input::-moz-placeholder {
+    font-size: @tiny;
+  }
+  & > input:-ms-input-placeholder {
+    font-size: @tiny;
+  }
+
 
   &.first {
     input {
-      border: 1px solid @white;
-      border-right: 0px;
-      border-radius: 10px 0px 0px 10px;
+      border-left: 1px solid @white !important;
+      border-radius: 10px 0px 0px 10px !important;
     }
   }
 
@@ -19,14 +31,16 @@
   }
 
   input {
-    //background: #265871; // dropdown background color
-    color: @white;
-    background: transparent;
-    border: none;
-    border: 1px solid @white;
 
-    border-radius: 0px;
-    border-right: 0px;
-    border-left: 0px;
+    width: 100%;
+    height: 100%;
+    //background: #265871; // dropdown background color
+    color: red !important;
+    background: transparent;
+    border: 1px solid @white !important;
+
+    border-radius: 0px !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
   }
 }
