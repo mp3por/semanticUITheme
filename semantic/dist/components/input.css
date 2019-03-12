@@ -513,6 +513,8 @@
 
 .ui.input.griffin {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .ui.input.griffin.first input {
   border: 1px solid #FFFFFF;
@@ -523,6 +525,8 @@
   background: #265871 !important;
 }
 .ui.input.griffin input {
+  width: inherit;
+  height: inherit;
   color: #FFFFFF;
   background: transparent;
   border: none;
