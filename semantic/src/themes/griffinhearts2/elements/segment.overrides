@@ -5,7 +5,7 @@
   padding: 0px 20px ;
   max-width: 1200px;
   height: 105px;
-  background-color: #1F2A3E;
+  background-color: @footerBackground;
   margin: auto;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;

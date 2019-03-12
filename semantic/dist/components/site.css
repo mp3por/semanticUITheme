@@ -226,6 +226,16 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .sub-logo.text {
   color: #F4B300;
 }
+.video-container {
+  background-color: #1F2A3E;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  font-line: 30px;
+  width: 400px;
+  height: 220px;
+  margin: auto;
+}
 
 
 /*******************************
