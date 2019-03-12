@@ -1,3 +1,21 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.input.griffin {
+  display: block;
+
+  input {
+    background: #265871; // dropdown background color
+    color: @white;
+
+    &:first-child {
+      border: 1px solid white;
+      border-right: 0px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}

@@ -245,6 +245,20 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .booking-type-container .radio-button-container:not(last) {
   margin-right: 10px;
 }
+.take-space {
+  width: 100% !important;
+  height: 100% !important;
+}
+.vertical-divider {
+  z-index: 100;
+  border: solid #FFFFFF;
+  border-left: 1px;
+  height: 60%;
+  width: 0;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
 
 
 /*******************************

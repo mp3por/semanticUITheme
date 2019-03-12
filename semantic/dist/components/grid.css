@@ -1044,8 +1044,8 @@
 
 .ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
 .ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
-  -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
-          box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: -1px 0px 0px 0px #FFFFFF;
+          box-shadow: -1px 0px 0px 0px #FFFFFF;
 }
 
 /* Swap from padding to margin on columns to have dividers align */
@@ -1075,8 +1075,8 @@
 
 /* Divided Row */
 .ui.grid > .divided.row > .column {
-  -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
-          box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: -1px 0px 0px 0px #FFFFFF;
+          box-shadow: -1px 0px 0px 0px #FFFFFF;
 }
 .ui.grid > .divided.row > .column:first-child {
   -webkit-box-shadow: none;
@@ -1498,8 +1498,8 @@
 /* Divided Reversed */
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
-    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
-            box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: -1px 0px 0px 0px #FFFFFF;
+            box-shadow: -1px 0px 0px 0px #FFFFFF;
   }
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="mobile reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
@@ -1548,8 +1548,8 @@
 /* Divided Reversed */
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
-    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
-            box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: -1px 0px 0px 0px #FFFFFF;
+            box-shadow: -1px 0px 0px 0px #FFFFFF;
   }
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="tablet reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
@@ -1598,8 +1598,8 @@
 /* Divided Reversed */
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .column:first-child,
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
-    -webkit-box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
-            box-shadow: -1px 0px 0px 0px rgba(34, 36, 38, 0.15);
+    -webkit-box-shadow: -1px 0px 0px 0px #FFFFFF;
+            box-shadow: -1px 0px 0px 0px #FFFFFF;
   }
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .column:last-child,
   .ui[class*="computer reversed"].divided.grid:not([class*="vertically divided"]) > .row > .column:last-child {
@@ -2031,6 +2031,10 @@
          Theme Overrides
 *******************************/
 
+.column.no-gutters {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
 
 /*******************************

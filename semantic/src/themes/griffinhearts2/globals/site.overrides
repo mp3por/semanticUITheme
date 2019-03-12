@@ -11,7 +11,7 @@
   padding-top: 22px;
 }
 
-[class*="regular font"]{
+[class*="regular font"] {
   font-family: @mainFontRegular, @pageFont !important;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .ui[class*="yellow text"] {
-  color :  @yellow;
+  color: @yellow;
 }
 
 .pusher {
@@ -32,11 +32,13 @@
 #content {
   flex: 1;
 }
+
 .logo.text {
   font-size: 60px !important;
   line-height: 60px !important;
   text-align: center;
 }
+
 .sub-logo.text {
   color: @yellow;
 }
@@ -65,4 +67,20 @@
   .radio-button-container:not(last) {
     margin-right: 10px;
   }
+}
+
+.take-space {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.vertical-divider {
+  z-index: 100;
+  border: solid @white;
+  border-left: 1px;
+  height: 60%;
+  width: 0;
+  position: absolute;
+  top: 6px;
+  right: 0;
 }
