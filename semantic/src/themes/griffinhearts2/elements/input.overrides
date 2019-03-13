@@ -1,7 +1,69 @@
 /*******************************
          Theme Overrides
 *******************************/
-.ui.input.griffin {
+
+@verticalDividerDesign2Offset: 5px;
+@design2InputColor: #021D35;
+@design2currencyRightOffset: 15px;
+@design2currencyWidth: 15px;
+
+.ui.input.griffin.design-2 {
+  width: 100%;
+  height: 100%;
+  min-width: @design2currencyWidth + @design2currencyRightOffset + @verticalDividerDesign2Offset * 2 + 10px;
+
+  font-size: @large;
+  line-height: @large;
+
+  & > * {
+    display: inline-block;
+  }
+
+  color: @design2InputColor !important;
+
+  .vertical-line {
+    background-color: @design2InputColor;
+    width: 2px;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: @verticalDividerDesign2Offset;
+  }
+
+  .currency {
+    font-size: @tiny;
+    line-height: @tiny;
+    position: absolute;
+    bottom: 10px;
+    right: @design2currencyRightOffset;
+    width: @design2currencyWidth;
+  }
+
+  & > input::-webkit-input-placeholder {
+    font-size: @tiny;
+  }
+
+  & > input::-moz-placeholder {
+    font-size: @tiny;
+  }
+
+  & > input:-ms-input-placeholder {
+    font-size: @tiny;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding-left: @verticalDividerDesign2Offset * 2;
+    padding-right: @design2currencyRightOffset + @design2currencyWidth;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: 1px solid #0C9BBC;
+  }
+}
+
+
+.ui.input.griffin.design-1 {
   display: block;
   width: 100%;
   height: 100%;
@@ -9,9 +71,11 @@
   & > input::-webkit-input-placeholder {
     font-size: @tiny;
   }
+
   & > input::-moz-placeholder {
     font-size: @tiny;
   }
+
   & > input:-ms-input-placeholder {
     font-size: @tiny;
   }
