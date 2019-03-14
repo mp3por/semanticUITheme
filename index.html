@@ -16,13 +16,22 @@
     <script src="semantic/dist/semantic.js"></script>
 
     <script type="text/javascript" src="node_modules/semantic-ui-calendar/dist/calendar.min.js"></script>
-    <link rel="stylesheet" href="node_modules/semantic-ui-calendar/dist/calendar.min.css" />
+    <link rel="stylesheet" href="node_modules/semantic-ui-calendar/dist/calendar.min.css"/>
+
+    <script type="text/javascript" src="node_modules/semantic-ui-range/range.js"></script>
+    <link rel="stylesheet" href="node_modules/semantic-ui-range/range.css"/>
+
 
     <script>
         $(document).ready(function () {
             $('.ui.dropdown').dropdown();
-            $('#example2').calendar({
+            $('.ui.calendar').calendar({
                 type: 'date'
+            });
+            $('.ui.range').range({
+                min: 0,
+                max: 10,
+                start: 1
             });
         });
     </script>
@@ -31,8 +40,14 @@
 <div class="pusher">
     <div id="content" class="ui vertical stripe segment" style="border:none;">
         <div class="ui middle aligned stackable grid container">
-            <div class="row">
-                <div class="four wide column"></div>
+            <div class="row" style="height: 150px;">
+                <div class="four wide column">
+                    <div class="vertical range-container">
+                        <span class="min-range">0</span>
+                        <div class="ui range"></div>
+                        <span class="max-range">10</span>
+                    </div>
+                </div>
                 <div class="eight wide center aligned column"> The Platform <span class="ui yellow text">•</span>
                     Partners <span
                             class="ui yellow text">•</span> Blog <span class="ui yellow text">•</span> Contact
@@ -63,9 +78,9 @@
                     <button class="ui regular font griffin button">Sign in</button>
 
                     <!--<div class="ui griffin design-2 input">-->
-                        <!--<div class="vertical-line">&nbsp;</div>-->
-                        <!--<input type="text" placeholder="Price" name="design-2">-->
-                        <!--<div class="currency">eur</div>-->
+                    <!--<div class="vertical-line">&nbsp;</div>-->
+                    <!--<input type="text" placeholder="Price" name="design-2">-->
+                    <!--<div class="currency">eur</div>-->
                     <!--</div>-->
                 </div>
             </div>
@@ -114,7 +129,9 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui griffin place dropdown">
-                                    <div class="text"><i class="map marker icon"></i><div class="placeholder">From city:</div></div>
+                                    <div class="text"><i class="map marker icon"></i>
+                                        <div class="placeholder">From city:</div>
+                                    </div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
@@ -137,7 +154,9 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui griffin place dropdown">
-                                    <div class="text"><i class="map marker icon"></i><div class="placeholder">To city:</div></div>
+                                    <div class="text"><i class="map marker icon"></i>
+                                        <div class="placeholder">To city:</div>
+                                    </div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
@@ -158,14 +177,14 @@
                         </div>
                         <!-- DATES -->
                         <div class="no-gutters column">
-                            <div class="ui calendar take-space" id="example2">
+                            <div class="ui calendar take-space">
                                 <div class="ui black griffin design-1 light-blue take-space input left icon">
                                     <i class="calendar icon"></i>
                                     <input type="text" placeholder="Date">
                                 </div>
                             </div>
                             <!--<div class="ui griffin large label">-->
-                                <!--<i class="calendar icon"></i> Dates-->
+                            <!--<i class="calendar icon"></i> Dates-->
                             <!--</div>-->
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
@@ -176,8 +195,8 @@
                                 <i class="male icon white"></i>
                             </div>
                             <!--<div class="ui left icon griffin light-blue input">-->
-                                <!--<input type="text" placeholder="Passengers:" name="passengers">-->
-                                <!--<i class="male icon white"></i>-->
+                            <!--<input type="text" placeholder="Passengers:" name="passengers">-->
+                            <!--<i class="male icon white"></i>-->
                             <!--</div>-->
                             <div class="vertical-divider">&nbsp;</div>
                         </div>
@@ -185,17 +204,21 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui dropdown small  take-space accommodation griffin">
-                                    <div class="text"> <i class="building icon"></i> <div class="placeholder">Accommodation:</div></div>
+                                    <div class="text"><i class="building icon"></i>
+                                        <div class="placeholder">Accommodation:</div>
+                                    </div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
-                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>All</div>
+                                            <label class="radio-button-container">
+                                                <div class="ticker"><i class="building icon"></i>All</div>
                                                 <input type="checkbox" checked="checked" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="item">
-                                            <label class="radio-button-container"><div class="ticker"><i class="building icon"></i>Hotel</div>
+                                            <label class="radio-button-container">
+                                                <div class="ticker"><i class="building icon"></i>Hotel</div>
                                                 <input type="checkbox" name="accommodation_type">
                                                 <span class="checkmark"></span>
                                             </label>
@@ -209,17 +232,21 @@
                         <div class="no-gutters column">
                             <div class="ui dropdown-container light-blue take-space">
                                 <div class="ui dropdown small  take-space transfer griffin">
-                                    <div class="text"><i class="bus icon"></i> <div class="placeholder"> Transfer: </div></div>
+                                    <div class="text"><i class="bus icon"></i>
+                                        <div class="placeholder"> Transfer:</div>
+                                    </div>
                                     <div class="menu">
                                         <div class="padding">&nbsp;</div>
                                         <div class="item">
-                                            <label class="radio-button-container"><div class="ticker"><i class="bus icon"></i>Public</div>
+                                            <label class="radio-button-container">
+                                                <div class="ticker"><i class="bus icon"></i>Public</div>
                                                 <input type="checkbox" checked="checked" name="transfer_type">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="item">
-                                            <label class="radio-button-container"><div class="ticker"><i class="bus  icon"></i>Rent a car</div>
+                                            <label class="radio-button-container">
+                                                <div class="ticker"><i class="bus  icon"></i>Rent a car</div>
                                                 <input type="checkbox" name="transfer_type">
                                                 <span class="checkmark"></span>
                                             </label>
