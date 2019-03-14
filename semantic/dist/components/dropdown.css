@@ -775,8 +775,8 @@ select.ui.dropdown {
 
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background: #265871;
+  color: #FFFFFF;
   z-index: 13;
 }
 
@@ -1530,7 +1530,7 @@ select.ui.dropdown {
 .ui.dropdown.griffin.currency {
   background: #265871 !important;
   border: 1px solid #FFFFFF;
-  border-radius: 9.34px;
+  border-radius: 9.35px;
 }
 .ui.dropdown.griffin.currency .text > * {
   margin: auto;
@@ -1639,6 +1639,10 @@ select.ui.dropdown {
 }
 .ui.dropdown.griffin .menu .item {
   padding: 6px 6px 6px 2px !important;
+}
+.ui.dropdown.griffin .menu .item:last-child {
+  border-bottom-left-radius: 9.35px;
+  border-bottom-right-radius: 9.35px;
 }
 .ui.dropdown.griffin .menu .item .label {
   margin: 0px 2px;

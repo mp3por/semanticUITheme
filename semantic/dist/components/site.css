@@ -238,8 +238,10 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 }
 .griffin.form-container {
   max-width: 1800px;
-  min-height: 250px;
+  min-height: 180px;
   background-color: rgba(31, 42, 62, 0.5);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
   border-radius: 26px;
 }
 .booking-type-container .radio-button-container:not(last) {

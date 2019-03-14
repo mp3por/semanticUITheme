@@ -3830,6 +3830,11 @@
          Theme Overrides
 *******************************/
 
+.ui.griffin.button:active,
+.ui.griffin.button:hover,
+.ui.griffin.button:focus {
+  background-color: #F4B300;
+}
 
 
 /*******************************

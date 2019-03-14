@@ -2,9 +2,7 @@
          Theme Overrides
 *******************************/
 .ui.griffin.button {
-  //border-radius: 22px;
-  //width: 130px;
-  //height: 50px;
-  //font-size: 26px;
-  //padding: 0;
+  &:active, &:hover, &:focus {
+    background-color: @yellow;
+  }
 }

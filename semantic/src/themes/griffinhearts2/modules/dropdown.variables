@@ -282,9 +282,10 @@
        States
 --------------------*/
 
+
 /* Hovered */
-@hoveredItemBackground: @transparentBlack;
-@hoveredItemColor: @selectedTextColor;
+@hoveredItemBackground: @griffinLightblue;
+@hoveredItemColor: @white;
 @hoveredZIndex: @menuZIndex + 2;
 
 /* Default Text */

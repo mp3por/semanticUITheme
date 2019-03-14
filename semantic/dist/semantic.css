@@ -806,8 +806,10 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .griffin.form-container {
   max-width: 1800px;
-  min-height: 250px;
+  min-height: 180px;
   background-color: rgba(31, 42, 62, 0.5);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
   border-radius: 26px;
 }
 
@@ -5214,6 +5216,12 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.griffin.button:active,
+.ui.griffin.button:hover,
+.ui.griffin.button:focus {
+  background-color: #F4B300;
+}
 
 /*******************************
          Site Overrides
@@ -33215,8 +33223,8 @@ select.ui.dropdown {
 /* Menu Item Hover */
 
 .ui.dropdown .menu > .item:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background: #265871;
+  color: #FFFFFF;
   z-index: 13;
 }
 
@@ -34059,7 +34067,7 @@ select.ui.dropdown {
 .ui.dropdown.griffin.currency {
   background: #265871 !important;
   border: 1px solid #FFFFFF;
-  border-radius: 9.34px;
+  border-radius: 9.35px;
 }
 
 .ui.dropdown.griffin.currency .text > * {
@@ -34189,6 +34197,11 @@ select.ui.dropdown {
 
 .ui.dropdown.griffin .menu .item {
   padding: 6px 6px 6px 2px !important;
+}
+
+.ui.dropdown.griffin .menu .item:last-child {
+  border-bottom-left-radius: 9.35px;
+  border-bottom-right-radius: 9.35px;
 }
 
 .ui.dropdown.griffin .menu .item .label {

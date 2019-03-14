@@ -78,7 +78,7 @@
   &.currency {
     background: @backgroundColor !important;
     border: 1px solid @white;
-    border-radius: 9.34px;
+    border-radius: @borderRadius;
 
     .text > * {
       margin: auto;
@@ -206,6 +206,11 @@
 
     .item {
       padding: 6px 6px 6px 2px !important;
+
+      &:last-child {
+        border-bottom-left-radius: @borderRadius;
+        border-bottom-right-radius: @borderRadius;
+      }
 
       .label {
         margin: 0px 2px;
