@@ -80,6 +80,14 @@
     border: 1px solid @white;
     border-radius: 9.34px;
 
+    .text > * {
+      margin: auto;
+
+      .display-value {
+        margin: auto;
+      }
+    }
+
     .menu {
       left: -1px;
     }

@@ -34038,6 +34038,14 @@ select.ui.dropdown {
   border-radius: 9.34px;
 }
 
+.ui.dropdown.griffin.currency .text > * {
+  margin: auto;
+}
+
+.ui.dropdown.griffin.currency .text > * .display-value {
+  margin: auto;
+}
+
 .ui.dropdown.griffin.currency .menu {
   left: -1px;
 }
